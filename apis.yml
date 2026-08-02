@@ -1,7 +1,25 @@
 aid: weilos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/weilos.png
 name: Weilos
-description: Weilos is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Weilos was a health and wellness startup surfaced as an a16z portfolio company and added to the
+  API Evangelist network as a stub for enrichment. As of the 2026-07-21 enrichment pass the company
+  no longer operates independently — weilos.com issues a 301 redirect to weightwatchers.com, indicating
+  Weilos has been absorbed into WeightWatchers (WW). No independent developer surface exists — the
+  hosts api.weilos.com, developer.weilos.com, and docs.weilos.com do not resolve in DNS, and there is
+  no public API, OpenAPI specification, SDK, or developer portal to catalog. This profile is retained
+  as an acquired/defunct lead with no API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/weilos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +27,26 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-note: 'weilos.com 301-redirects to weightwatchers.com (verified 2026-07-21); no independent API surface.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Health
+- Wellness
+- Weight Loss
+- Fitness
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
